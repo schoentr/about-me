@@ -1,6 +1,6 @@
 'use strict';
 
-
+var correctCounter = 0;
 var userName = prompt('Welcome!  What is your name?');
 
 //********************
@@ -24,10 +24,13 @@ if(game === true){
 
    if (questionTexas === 'YES'){
      alert(userName +' ARE CORRECT! I am from Denton, Texas. Home to the University of North Texas, Peterbuilt Trucks, and Josten\'s Jewelry');
-   } else{
+     correctCounter++;
+   
+      
+    } else{
      alert( 'Sorry ' + userName + ',I am from Denton, Texas.   It is about 30 minutes north of Dallas');
    }
-
+  console.log('Correct Awnser #: ' +correctCounter);
 
 //********************   
 //Game Play Question 2
@@ -41,10 +44,12 @@ if(game === true){
  
     if (questionGuitar === 'NO'){
       alert(userName +' ARE CORRECT! I am know how to play the piano, and the violin. But not the guitar!');
+      correctCounter++;
+    
     } else{
       alert( 'Sorry ' + userName + ',I cannot play the guitar, but really want to learn.');
          }
-
+  console.log('Correct Awnser #: ' +correctCounter);
 //********************
 //Game Play Question 3
 
@@ -56,11 +61,13 @@ if(game === true){
   console.log ('Uppercase Input: ' + questionCPR);
 
    if (questionCPR === 'YES'){
-     alert(userName +' ARE CORRECT! My first job was a life-guard. I held an instructor trainer certification from the American Red Cross in CPR and first-aid, although not currently certified.');
-   } else{
-     alert( 'Your lucky' + userName + ', I once did. and I could possibly save your life.');
-        }
+    alert(userName +' ARE CORRECT! My first job was a life-guard. I held an instructor trainer certification from the American Red Cross in CPR and first-aid, although not currently certified.');
+    correctCounter++;
 
+    } else{
+    alert( 'Your lucky' + userName + ', I once did. and I could possibly save your life.');
+      }
+    console.log('Correct Awnser #: ' +correctCounter);
 
 //********************
 // Play Question 4
@@ -74,10 +81,12 @@ console.log ('Uppercase Input: ' + questionSport);
 
  if (questionSport === 'NO'){
    alert(userName +' ARE CORRECT! Although I am a huge Husky and Seahawk fan.  I enjoy watching soccer and baseball more.');
- } else{
+   correctCounter++;
+   
+  } else{
    alert( 'Sorry ' + userName + ', Although I am a huge Husky and Seahawk fan.  I enjoy watching soccer and baseball more.');
       }
- 
+ console.log('Correct Awnser #: ' +correctCounter);
 //********************  
 //Game Play Question 5
 var questionFly = prompt('I know how to fly a plane?');
@@ -88,12 +97,14 @@ console.log ('Uppercase Input5: ' + questionFly);
 
  if (questionFly === 'YES'){
    alert(userName +' believe it or not.  I DID recieve my pilot\'s license before my drivers liscense!');
- } else{
+   correctCounter++;
+  ;
+  } else{
    alert( 'Sorry ' + userName + ', I DID recieve my pilot\'s license at the age of 15!');
       }
- 
+  console.log('Correct Awnser #: ' +correctCounter)
       
-  alert('Thanks for playing ' + userName);
+  alert('Thanks for playing ' + userName+ ".  You had " + correctCounter + " awnsered correctly.");
 
 }
   
