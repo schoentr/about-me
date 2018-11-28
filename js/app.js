@@ -11,7 +11,7 @@ console.log ('game play: ' + game);
 if(game === true){
 
   
-//********************
+//******************** 
 //Game Play Question 1
 
   alert('OK Here a few qustions about myself -- Please respond with YES or NO');
