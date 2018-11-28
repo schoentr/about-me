@@ -1,13 +1,54 @@
 body {
+  font-style:times;
   background-color: #888888;
+  color: black;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 72px;
+  text-align: center;
   color: white;
 }
-title{
-  font-size: 60px;
+h2{
+  font-size: 48px;
   color: white;
+  text-align:center;
+}
+footer{
+  font-weight: 800;
+  text-align:center;
+}
+#funStuff{
+  text-align: right;
+  height: 80px;
+  font-weight: 800;
+  line-height:40px;
+  font-size:28;
+  Padding: 60px;
+  background-color:white;
+  color: black;
 
+}
+#hello{
+  text-align: right;
+  height: 80px;
+  font-weight: 800;
+  line-height:40px;
+  font-size:28;
+  Padding: 60px;
+  background-color:red;
+  color: white;
+}
+#otherStuff{
+  text-align: center;
+  height: 80px;
+  font-weight: 800;
+  line-height:40px;
+  font-size:50px;
+  Padding: 60px;
+  background-color:blue;
+  color: White;
+}
+#name{
+  font-size: 32px;
 }
