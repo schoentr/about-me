@@ -131,8 +131,40 @@ console.log ('Uppercase Input5: ' + questionFly);
       incorrectCounter++;
     }
   }
+  var correctCity = false;
+  var citiesVisited = ['NEW YORK', 'MILAN', 'DALLAS','SPOKANE','PORTLAND','BELFAST', 'DUBLIN'];
+  var cityGuessed;
+
+  for (var ii =0; ii <5 ; ii++){
+     if (correctCity===true){
+      console.log('AARRGGGG!!!!');
+      break;
+     }
+    cityGuessed = prompt('What is one of my favorite cities?');
+    cityGuessed = cityGuessed.toUpperCase();
+    console.log ('User City Gussed: ' + cityGuessed);
+   
+      
+    
+    
+    
+    for(var i=0; i < citiesVisited.length; i++){
+      if (citiesVisited[i] === cityGuessed){
+        correctCity = true;
+      }
+    }
+    console.log(citiesVisited[i] + ' : '+ correctCity + ':' + cityGuessed);
+    if(correctCity=== false){
+      alert('I have never been to ' + cityGuessed + '!  We should plan a trip. You have ' + (5-ii) + ' guesses remaining.');
+      incorrectCounter++;
+    }else {
+      alert('You are correct.  I love '+ cityGuessed);
+      correctCounter++;
+    }
+
+  }
 
   alert('Thanks for playing ' + userName+ '.  Out of ' + (correctCounter + incorrectCounter)+ ' opportunities you awnsered ' + correctCounter + ' correctly.');
   
 
-}
+ }
